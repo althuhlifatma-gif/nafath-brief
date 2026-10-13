@@ -34,3 +34,9 @@ Resource: CISA Alert: Vulnerability in Apache Log4j - https://www.cisa.gov/uscer
 A Software Bill of Materials (SBOM) is a formal, nested inventory detailing software components and supply chain relationships. Minimum data fields required include Supplier Name, Component Name, Version of Component, Other Unique Identifiers, Dependency Relationship, Author of SBOM Data, and Timestamp.
 
 Resource: CISA Software Bill of Materials (SBOM) - https://www.cisa.gov/sbom
+
+## Misconception in My Track
+A common misconception in networking is that enabling RPKI with BGP Origin Validation completely solves BGP hijacking. While RPKI cryptographically verifies whether an Autonomous System is authorized to originate a specific prefix, it does not validate the path traversed between Autonomous Systems. Attackers can still execute path-spoofing attacks by appending authorized AS numbers to malicious BGP updates. Section 3 of RFC 6480 confirms that RPKI ROAs only validate origin AS authorization and do not guarantee path integrity.
+
+## Open Question
+How will future Autonomous System Provider Authorization (ASPA) mechanisms integrate into existing edge router hardware without introducing severe processing latencies during dynamic BGP route convergence?
